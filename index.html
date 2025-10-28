@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Browser extensions manager UI</title>
+  </head>
+  <body scheme="0">
+    <div class="header">
+      <img src="assets/images/logo.svg" alt="Extensions" />
+      <button class="toggle-scheme">
+        <img src="assets/images/icon-sun.svg" alt="Toggle light mode" /><img
+          src="assets/images/icon-moon.svg"
+          alt="Toggle dark mode"
+        />
+      </button>
+    </div>
+    <main>
+      <div class="main-header">
+        <div class="main-title"></div>
+        <div class="filters">
+          <input
+            type="radio"
+            name="filter"
+            class="filter-btn filter-all js-filter-all"
+            checked
+          />All
+          <input
+            type="radio"
+            name="filter"
+            class="filter-btn filter-active js-filter-active"
+          />Active
+          <input
+            type="radio"
+            name="filter"
+            class="filter-btn filter-inactive js-filter-inactive"
+          />Inactive
+        </div>
+      </div>
+      <div class="cards-container js-cards-container"></div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">maethe</a>.
+    </div>
+  </body>
+</html>
