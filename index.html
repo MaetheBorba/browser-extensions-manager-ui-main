@@ -12,12 +12,24 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
 
     <title>Frontend Mentor | Browser extensions manager UI</title>
   </head>
   <body scheme="0">
     <div class="header">
-      <img src="assets/images/logo.svg" alt="Extensions" />
+      <div class="header-logo">
+        <img src="assets/images/logo-dark.svg" alt="Extensions" />
+        <img src="assets/images/logo.svg" alt="Extensions" />
+      </div>
       <button class="toggle-scheme">
         <img src="assets/images/icon-sun.svg" alt="Toggle light mode" /><img
           src="assets/images/icon-moon.svg"
@@ -27,27 +39,33 @@
     </div>
     <main>
       <div class="main-header">
-        <div class="main-title"></div>
+        <div class="main-title">Extensions List</div>
         <div class="filters">
-          <input
-            type="radio"
-            name="filter"
-            class="filter-btn filter-all js-filter-all"
-            checked
-          />All
-          <input
-            type="radio"
-            name="filter"
-            class="filter-btn filter-active js-filter-active"
-          />Active
-          <input
-            type="radio"
-            name="filter"
-            class="filter-btn filter-inactive js-filter-inactive"
-          />Inactive
+          <div class="filter-btn">
+            <input
+              type="radio"
+              name="filter"
+              class="filter-btn filter-all js-filter-all"
+              checked
+            />All
+          </div>
+          <div class="filter-btn">
+            <input
+              type="radio"
+              name="filter"
+              class="filter-btn filter-active js-filter-active"
+            />Active
+          </div>
+          <div class="filter-btn">
+            <input
+              type="radio"
+              name="filter"
+              class="filter-btn filter-inactive js-filter-inactive"
+            />Inactive
+          </div>
         </div>
       </div>
-      <div class="cards-container js-cards-container"></div>
+      <div class="cards-container js-cards-container" filter="all"></div>
     </main>
 
     <div class="attribution">
@@ -55,5 +73,7 @@
       <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
       Coded by <a href="#">maethe</a>.
     </div>
+
+    <script type="module" src="scripts/main.js"></script>
   </body>
 </html>
