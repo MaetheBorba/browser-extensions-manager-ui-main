@@ -40,7 +40,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/browser-extensions-manager-ui-LKIskERLL2))
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/browser-extensions-manager-ui-LKIskERLL2)
 - Live Site URL: [Add live site URL here](https://maetheborba.github.io/browser-extensions-manager-ui-main/)
 
 ## My process
