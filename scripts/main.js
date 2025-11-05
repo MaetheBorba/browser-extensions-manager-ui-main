@@ -1,3 +1,4 @@
+// could load extensions from the ones installed in the browser instead
 import extensions from "../data.json" with { type: "json" };
 
 function renderCardsContainer() {
@@ -76,6 +77,7 @@ function renderCardsContainer() {
   }
 
   document.querySelector(".js-cards-container").innerHTML = cardsContainerHTML;
+  addRemoveEvent();
 }
 
 renderCardsContainer();
@@ -88,7 +90,6 @@ document.querySelector(".toggle-scheme").addEventListener("click", () => {
 });
 
 document.querySelector(".js-filter-all").addEventListener("click", () => {
-  console.log("aaa");
   document.querySelector(".js-cards-container").setAttribute("filter", "all");
   renderCardsContainer();
 });
@@ -107,8 +108,11 @@ document.querySelector(".js-filter-inactive").addEventListener("click", () => {
   renderCardsContainer();
 });
 
-document.querySelectorAll(".remove-btn").forEach((button) => {
-  button.addEventListener("click", () => {
-    button.parentElement.parentElement.remove();
+// could make this uninstall the deleted extension from the browser
+function addRemoveEvent() {
+  document.querySelectorAll(".remove-btn").forEach((button) => {
+    button.addEventListener("click", () => {
+      button.parentElement.parentElement.remove();
+    });
   });
-});
+}

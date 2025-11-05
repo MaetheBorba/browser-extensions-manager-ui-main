@@ -1,0 +1,64 @@
+[scheme="1"] {
+  background: var(--light-gradient);
+  color: var(--neutral-800);
+}
+
+[scheme="1"] .header {
+  background-color: var(--neutral-0);
+  box-shadow: 0px 0px 2px 2px var(--neutral-200);
+}
+
+[scheme="1"] .toggle-scheme {
+  background-color: var(--neutral-100);
+}
+
+[scheme="1"] .toggle-scheme:hover {
+  background-color: var(--neutral-200);
+}
+
+[scheme="1"] .toggle-scheme img:first-child,
+[scheme="1"] .header-logo img:first-child {
+  display: none;
+}
+
+[scheme="1"] .filter-btn {
+  background-color: var(--neutral-0);
+  border-style: none;
+  box-shadow: 0px 0px 2px 2px var(--neutral-200);
+}
+
+[scheme="1"] .filter-btn:hover {
+  background-color: var(--neutral-200);
+}
+
+[scheme="1"] .filter-btn:has(input:checked) {
+  background-color: var(--red-700);
+  color: var(--neutral-200);
+  font-weight: normal;
+  margin: 10px;
+  padding: 10px 20px;
+}
+
+[scheme="1"] .card {
+  background-color: var(--neutral-0);
+  border-style: none;
+  box-shadow: 0px 0px 2px 2px var(--neutral-200);
+}
+
+[scheme="1"] .remove-btn {
+  background-color: var(--neutral-0);
+  color: var(--neutral-800);
+  border-color: var(--neutral-300);
+}
+
+[scheme="1"] .remove-btn:hover {
+  background-color: var(--neutral-300);
+}
+
+[scheme="1"] .toggle-active-btn {
+  background-color: var(--neutral-300);
+}
+
+[scheme="1"] .toggle-active-btn:has(input:checked) {
+  background-color: var(--red-700);
+}
