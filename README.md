@@ -148,4 +148,4 @@ Creating a slider/switch button with CSS:
 ## Author
 
 - LinkedIn - [Maethe Borba](www.linkedin.com/in/maethe-borba)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@MaetheBorba](https://www.frontendmentor.io/profile/MaetheBorba)
